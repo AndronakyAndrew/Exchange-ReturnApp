@@ -6,8 +6,27 @@
         xmlns:local="clr-namespace:Exchange_ReturnApp"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Exchange-Return App" Height="350" Width="400">
     <Grid>
+        <!-- Title -->
+        <TextBlock Text="Exchange-return App" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,20,0,0"/>
+
+        <!-- Input Fields -->
+        <Label Content="Cost:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,70,0,0"/>
+        <TextBox Name="CostInput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="100,70,0,0"/>
+
+        <Label Content="Amount Paid:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,110,0,0"/>
+        <TextBox Name="AmountPaidInput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="140,110,0,0"/>
+
+        <!-- Calculate Button -->
+        <Button Content="Calculate" Name="CalculateButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="120,150,0,0" Click="CalculateExchange"/>
+
+        <!-- Result Labels -->
+        <Label Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,190,0,0"/>
+        <Label Name="ChangeLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,190,0,0"/>
+
+        <Label Content="Small Coins:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,220,0,0"/>
+        <Label Name="SmallCoinsLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,220,0,0"/>
 
     </Grid>
 </Window>
